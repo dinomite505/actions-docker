@@ -1,0 +1,16 @@
+name: 'Docker Action'
+description: 'A GitHub Action that uses a Docker container'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+inputs:
+  apiToken:
+    description: 'Authentication token for API access'
+    required: true
+
+  outputPath:
+      description: 'Path to store output files'
+      required: false
+      default: './output'

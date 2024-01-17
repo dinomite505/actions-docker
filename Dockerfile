@@ -13,4 +13,3 @@ RUN apt-get update && \
 
 # Set the entrypoint fot the container
 ENTRYPOINT [ "/app/entrypoint.sh" ]
-
